@@ -1,0 +1,811 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BD4D4EBDE19E2FBA2CCB40C /* Pods_VendooUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FACABBA7656B6698731A6B0 /* Pods_VendooUITests.framework */; };
+		3E6CC3571CF2A94B00E00A70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6CC3561CF2A94B00E00A70 /* AppDelegate.swift */; };
+		3E6CC3591CF2A94B00E00A70 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6CC3581CF2A94B00E00A70 /* SignInViewController.swift */; };
+		3E6CC35B1CF2A94B00E00A70 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6CC35A1CF2A94B00E00A70 /* SignUpViewController.swift */; };
+		3E6CC35E1CF2A94B00E00A70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E6CC35C1CF2A94B00E00A70 /* Main.storyboard */; };
+		3E6CC3601CF2A94B00E00A70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E6CC35F1CF2A94B00E00A70 /* Assets.xcassets */; };
+		3E6CC3631CF2A94B00E00A70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E6CC3611CF2A94B00E00A70 /* LaunchScreen.storyboard */; };
+		3E6CC36E1CF2A94B00E00A70 /* VendooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6CC36D1CF2A94B00E00A70 /* VendooTests.swift */; };
+		3E6CC3791CF2A94B00E00A70 /* VendooUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6CC3781CF2A94B00E00A70 /* VendooUITests.swift */; };
+		3E7CF3FC1CF5FE9400F486B2 /* RecoverPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7CF3FB1CF5FE9400F486B2 /* RecoverPasswordViewController.swift */; };
+		3E7CF3FE1CF5FF8200F486B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E7CF3FD1CF5FF8200F486B2 /* GoogleService-Info.plist */; };
+		3E7CF4011CF6366300F486B2 /* EtsyRESTAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7CF4001CF6366300F486B2 /* EtsyRESTAPIManager.swift */; };
+		3E7CF4041CF6450D00F486B2 /* ListingObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7CF4031CF6450D00F486B2 /* ListingObject.swift */; };
+		3EB2F5161CF442CF002E6D2C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB2F5151CF442CF002E6D2C /* Security.framework */; };
+		3EC325111CF703A600626C48 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC325101CF703A600626C48 /* ItemCell.swift */; };
+		3EC325151CF7104300626C48 /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC325141CF7104300626C48 /* ItemTableViewController.swift */; };
+		3EC3251E1CF734C100626C48 /* NetworksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC3251D1CF734C100626C48 /* NetworksTableViewController.swift */; };
+		3EC325201CF7C3AB00626C48 /* NetworkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC3251F1CF7C3AB00626C48 /* NetworkTableViewCell.swift */; };
+		3EC325231CF7DA5500626C48 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC325221CF7DA5500626C48 /* HomeViewController.swift */; };
+		3EC325261CF7E90000626C48 /* FacebookGraphAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC325251CF7E90000626C48 /* FacebookGraphAPIManager.swift */; };
+		3EC325281CF86B5400626C48 /* Services.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3EC325271CF86B5400626C48 /* Services.plist */; };
+		3EC3252D1CF894C400626C48 /* ItemImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC3252C1CF894C400626C48 /* ItemImagePickerViewController.swift */; };
+		3EC3252F1CF894E500626C48 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EC3252E1CF894E500626C48 /* AVFoundation.framework */; };
+		CA20AB81F709511F1A8C7963 /* Pods_VendooTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D05AEDAE485B93305CC629B5 /* Pods_VendooTests.framework */; };
+		D5995A6D02C7FCA4F561AAB3 /* Pods_Vendoo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F69918E43DC1276F42551F /* Pods_Vendoo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E6CC36A1CF2A94B00E00A70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E6CC34B1CF2A94B00E00A70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E6CC3521CF2A94B00E00A70;
+			remoteInfo = Vendoo;
+		};
+		3E6CC3751CF2A94B00E00A70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E6CC34B1CF2A94B00E00A70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E6CC3521CF2A94B00E00A70;
+			remoteInfo = Vendoo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06804DD03B93C7E2714D5566 /* Pods-VendooTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VendooTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VendooTests/Pods-VendooTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1B0AD5D22E5B4D8197481769 /* Pods-VendooTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VendooTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VendooTests/Pods-VendooTests.release.xcconfig"; sourceTree = "<group>"; };
+		368DE81C9F5991477528A929 /* Pods-VendooUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VendooUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VendooUITests/Pods-VendooUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3E6CC3531CF2A94B00E00A70 /* Vendoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vendoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E6CC3561CF2A94B00E00A70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3E6CC3581CF2A94B00E00A70 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		3E6CC35A1CF2A94B00E00A70 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		3E6CC35D1CF2A94B00E00A70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3E6CC35F1CF2A94B00E00A70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E6CC3621CF2A94B00E00A70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3E6CC3641CF2A94B00E00A70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E6CC3691CF2A94B00E00A70 /* VendooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VendooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E6CC36D1CF2A94B00E00A70 /* VendooTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendooTests.swift; sourceTree = "<group>"; };
+		3E6CC36F1CF2A94B00E00A70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E6CC3741CF2A94B00E00A70 /* VendooUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VendooUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E6CC3781CF2A94B00E00A70 /* VendooUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendooUITests.swift; sourceTree = "<group>"; };
+		3E6CC37A1CF2A94B00E00A70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E7CF3FB1CF5FE9400F486B2 /* RecoverPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecoverPasswordViewController.swift; sourceTree = "<group>"; };
+		3E7CF3FD1CF5FF8200F486B2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3E7CF4001CF6366300F486B2 /* EtsyRESTAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtsyRESTAPIManager.swift; sourceTree = "<group>"; };
+		3E7CF4031CF6450D00F486B2 /* ListingObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingObject.swift; sourceTree = "<group>"; };
+		3EB2F5151CF442CF002E6D2C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3EC325101CF703A600626C48 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		3EC325141CF7104300626C48 /* ItemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
+		3EC3251D1CF734C100626C48 /* NetworksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworksTableViewController.swift; sourceTree = "<group>"; };
+		3EC3251F1CF7C3AB00626C48 /* NetworkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTableViewCell.swift; sourceTree = "<group>"; };
+		3EC325221CF7DA5500626C48 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3EC325251CF7E90000626C48 /* FacebookGraphAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookGraphAPIManager.swift; sourceTree = "<group>"; };
+		3EC325271CF86B5400626C48 /* Services.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Services.plist; sourceTree = "<group>"; };
+		3EC3252C1CF894C400626C48 /* ItemImagePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemImagePickerViewController.swift; sourceTree = "<group>"; };
+		3EC3252E1CF894E500626C48 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6979B7B8AF7AC049C2F23196 /* Pods-Vendoo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vendoo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vendoo/Pods-Vendoo.release.xcconfig"; sourceTree = "<group>"; };
+		8FACABBA7656B6698731A6B0 /* Pods_VendooUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VendooUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9F6F7897E53ED9583C965E3 /* Pods-Vendoo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vendoo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vendoo/Pods-Vendoo.debug.xcconfig"; sourceTree = "<group>"; };
+		D05AEDAE485B93305CC629B5 /* Pods_VendooTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VendooTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F04540FDEF587384AABE5D4B /* Pods-VendooUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VendooUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VendooUITests/Pods-VendooUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F8F69918E43DC1276F42551F /* Pods_Vendoo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vendoo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E6CC3501CF2A94B00E00A70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EC3252F1CF894E500626C48 /* AVFoundation.framework in Frameworks */,
+				3EB2F5161CF442CF002E6D2C /* Security.framework in Frameworks */,
+				D5995A6D02C7FCA4F561AAB3 /* Pods_Vendoo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E6CC3661CF2A94B00E00A70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA20AB81F709511F1A8C7963 /* Pods_VendooTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E6CC3711CF2A94B00E00A70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BD4D4EBDE19E2FBA2CCB40C /* Pods_VendooUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E6CC34A1CF2A94B00E00A70 = {
+			isa = PBXGroup;
+			children = (
+				3E6CC3551CF2A94B00E00A70 /* Vendoo */,
+				3E6CC36C1CF2A94B00E00A70 /* VendooTests */,
+				3E6CC3771CF2A94B00E00A70 /* VendooUITests */,
+				3E6CC3541CF2A94B00E00A70 /* Products */,
+				58601EFD2871BD1BB6866596 /* Pods */,
+				D989DD70699180D9DB9DA709 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3E6CC3541CF2A94B00E00A70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E6CC3531CF2A94B00E00A70 /* Vendoo.app */,
+				3E6CC3691CF2A94B00E00A70 /* VendooTests.xctest */,
+				3E6CC3741CF2A94B00E00A70 /* VendooUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E6CC3551CF2A94B00E00A70 /* Vendoo */ = {
+			isa = PBXGroup;
+			children = (
+				3EC3252B1CF8944800626C48 /* NewItemPostingSession */,
+				3EC325241CF7E6B300626C48 /* FacebookServices */,
+				3E7CF3FF1CF6363200F486B2 /* EtsyServices */,
+				3EC325211CF7D91100626C48 /* TabbedScreens */,
+				3EC3250C1CF7026C00626C48 /* AppAuthentication */,
+				3E6CC3561CF2A94B00E00A70 /* AppDelegate.swift */,
+				3E6CC35C1CF2A94B00E00A70 /* Main.storyboard */,
+				3E6CC35F1CF2A94B00E00A70 /* Assets.xcassets */,
+				3E6CC3611CF2A94B00E00A70 /* LaunchScreen.storyboard */,
+				3E6CC3641CF2A94B00E00A70 /* Info.plist */,
+				3E7CF3FD1CF5FF8200F486B2 /* GoogleService-Info.plist */,
+				3EC325271CF86B5400626C48 /* Services.plist */,
+			);
+			path = Vendoo;
+			sourceTree = "<group>";
+		};
+		3E6CC36C1CF2A94B00E00A70 /* VendooTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E6CC36D1CF2A94B00E00A70 /* VendooTests.swift */,
+				3E6CC36F1CF2A94B00E00A70 /* Info.plist */,
+			);
+			path = VendooTests;
+			sourceTree = "<group>";
+		};
+		3E6CC3771CF2A94B00E00A70 /* VendooUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3E6CC3781CF2A94B00E00A70 /* VendooUITests.swift */,
+				3E6CC37A1CF2A94B00E00A70 /* Info.plist */,
+			);
+			path = VendooUITests;
+			sourceTree = "<group>";
+		};
+		3E7CF3FF1CF6363200F486B2 /* EtsyServices */ = {
+			isa = PBXGroup;
+			children = (
+				3E7CF4021CF644E400F486B2 /* EtsyObjects */,
+				3E7CF4001CF6366300F486B2 /* EtsyRESTAPIManager.swift */,
+			);
+			name = EtsyServices;
+			sourceTree = "<group>";
+		};
+		3E7CF4021CF644E400F486B2 /* EtsyObjects */ = {
+			isa = PBXGroup;
+			children = (
+				3E7CF4031CF6450D00F486B2 /* ListingObject.swift */,
+			);
+			name = EtsyObjects;
+			sourceTree = "<group>";
+		};
+		3EC3250C1CF7026C00626C48 /* AppAuthentication */ = {
+			isa = PBXGroup;
+			children = (
+				3E7CF3FB1CF5FE9400F486B2 /* RecoverPasswordViewController.swift */,
+				3E6CC35A1CF2A94B00E00A70 /* SignUpViewController.swift */,
+				3E6CC3581CF2A94B00E00A70 /* SignInViewController.swift */,
+			);
+			name = AppAuthentication;
+			sourceTree = "<group>";
+		};
+		3EC3250D1CF7029000626C48 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				3EC325101CF703A600626C48 /* ItemCell.swift */,
+				3EC325141CF7104300626C48 /* ItemTableViewController.swift */,
+			);
+			name = Items;
+			sourceTree = "<group>";
+		};
+		3EC325181CF717C700626C48 /* Networks */ = {
+			isa = PBXGroup;
+			children = (
+				3EC3251D1CF734C100626C48 /* NetworksTableViewController.swift */,
+				3EC3251F1CF7C3AB00626C48 /* NetworkTableViewCell.swift */,
+			);
+			name = Networks;
+			sourceTree = "<group>";
+		};
+		3EC325211CF7D91100626C48 /* TabbedScreens */ = {
+			isa = PBXGroup;
+			children = (
+				3EC3250D1CF7029000626C48 /* Items */,
+				3EC325181CF717C700626C48 /* Networks */,
+				3EC325221CF7DA5500626C48 /* HomeViewController.swift */,
+			);
+			name = TabbedScreens;
+			sourceTree = "<group>";
+		};
+		3EC325241CF7E6B300626C48 /* FacebookServices */ = {
+			isa = PBXGroup;
+			children = (
+				3EC325251CF7E90000626C48 /* FacebookGraphAPIManager.swift */,
+			);
+			name = FacebookServices;
+			sourceTree = "<group>";
+		};
+		3EC3252B1CF8944800626C48 /* NewItemPostingSession */ = {
+			isa = PBXGroup;
+			children = (
+				3EC3252C1CF894C400626C48 /* ItemImagePickerViewController.swift */,
+			);
+			name = NewItemPostingSession;
+			sourceTree = "<group>";
+		};
+		58601EFD2871BD1BB6866596 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9F6F7897E53ED9583C965E3 /* Pods-Vendoo.debug.xcconfig */,
+				6979B7B8AF7AC049C2F23196 /* Pods-Vendoo.release.xcconfig */,
+				06804DD03B93C7E2714D5566 /* Pods-VendooTests.debug.xcconfig */,
+				1B0AD5D22E5B4D8197481769 /* Pods-VendooTests.release.xcconfig */,
+				F04540FDEF587384AABE5D4B /* Pods-VendooUITests.debug.xcconfig */,
+				368DE81C9F5991477528A929 /* Pods-VendooUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D989DD70699180D9DB9DA709 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EC3252E1CF894E500626C48 /* AVFoundation.framework */,
+				3EB2F5151CF442CF002E6D2C /* Security.framework */,
+				F8F69918E43DC1276F42551F /* Pods_Vendoo.framework */,
+				D05AEDAE485B93305CC629B5 /* Pods_VendooTests.framework */,
+				8FACABBA7656B6698731A6B0 /* Pods_VendooUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E6CC3521CF2A94B00E00A70 /* Vendoo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E6CC37D1CF2A94B00E00A70 /* Build configuration list for PBXNativeTarget "Vendoo" */;
+			buildPhases = (
+				F467CC8AF77423C2B3AAB223 /* 📦 Check Pods Manifest.lock */,
+				3E6CC34F1CF2A94B00E00A70 /* Sources */,
+				3E6CC3501CF2A94B00E00A70 /* Frameworks */,
+				3E6CC3511CF2A94B00E00A70 /* Resources */,
+				057830C90EFCCD7B10B4BA6D /* 📦 Embed Pods Frameworks */,
+				2496EED87CE01F1EAE73BD6A /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vendoo;
+			productName = Vendoo;
+			productReference = 3E6CC3531CF2A94B00E00A70 /* Vendoo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3E6CC3681CF2A94B00E00A70 /* VendooTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E6CC3801CF2A94B00E00A70 /* Build configuration list for PBXNativeTarget "VendooTests" */;
+			buildPhases = (
+				9F58E69456F56F20E6643056 /* 📦 Check Pods Manifest.lock */,
+				3E6CC3651CF2A94B00E00A70 /* Sources */,
+				3E6CC3661CF2A94B00E00A70 /* Frameworks */,
+				3E6CC3671CF2A94B00E00A70 /* Resources */,
+				BB2BE6BA5C2D594FCCDF5838 /* 📦 Embed Pods Frameworks */,
+				6484261450FDD9D1DF56ED0B /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E6CC36B1CF2A94B00E00A70 /* PBXTargetDependency */,
+			);
+			name = VendooTests;
+			productName = VendooTests;
+			productReference = 3E6CC3691CF2A94B00E00A70 /* VendooTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3E6CC3731CF2A94B00E00A70 /* VendooUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E6CC3831CF2A94B00E00A70 /* Build configuration list for PBXNativeTarget "VendooUITests" */;
+			buildPhases = (
+				99EF583910BFA3B053CE8591 /* 📦 Check Pods Manifest.lock */,
+				3E6CC3701CF2A94B00E00A70 /* Sources */,
+				3E6CC3711CF2A94B00E00A70 /* Frameworks */,
+				3E6CC3721CF2A94B00E00A70 /* Resources */,
+				E5E78F727C025682CA6C7DBC /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E6CC3761CF2A94B00E00A70 /* PBXTargetDependency */,
+			);
+			name = VendooUITests;
+			productName = VendooUITests;
+			productReference = 3E6CC3741CF2A94B00E00A70 /* VendooUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E6CC34B1CF2A94B00E00A70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Okechi Onyeje";
+				TargetAttributes = {
+					3E6CC3521CF2A94B00E00A70 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					3E6CC3681CF2A94B00E00A70 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 3E6CC3521CF2A94B00E00A70;
+					};
+					3E6CC3731CF2A94B00E00A70 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 3E6CC3521CF2A94B00E00A70;
+					};
+				};
+			};
+			buildConfigurationList = 3E6CC34E1CF2A94B00E00A70 /* Build configuration list for PBXProject "Vendoo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E6CC34A1CF2A94B00E00A70;
+			productRefGroup = 3E6CC3541CF2A94B00E00A70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E6CC3521CF2A94B00E00A70 /* Vendoo */,
+				3E6CC3681CF2A94B00E00A70 /* VendooTests */,
+				3E6CC3731CF2A94B00E00A70 /* VendooUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E6CC3511CF2A94B00E00A70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EC325281CF86B5400626C48 /* Services.plist in Resources */,
+				3E6CC3631CF2A94B00E00A70 /* LaunchScreen.storyboard in Resources */,
+				3E7CF3FE1CF5FF8200F486B2 /* GoogleService-Info.plist in Resources */,
+				3E6CC3601CF2A94B00E00A70 /* Assets.xcassets in Resources */,
+				3E6CC35E1CF2A94B00E00A70 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E6CC3671CF2A94B00E00A70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E6CC3721CF2A94B00E00A70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		057830C90EFCCD7B10B4BA6D /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vendoo/Pods-Vendoo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2496EED87CE01F1EAE73BD6A /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vendoo/Pods-Vendoo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6484261450FDD9D1DF56ED0B /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VendooTests/Pods-VendooTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99EF583910BFA3B053CE8591 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F58E69456F56F20E6643056 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BB2BE6BA5C2D594FCCDF5838 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VendooTests/Pods-VendooTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5E78F727C025682CA6C7DBC /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VendooUITests/Pods-VendooUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F467CC8AF77423C2B3AAB223 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E6CC34F1CF2A94B00E00A70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E6CC35B1CF2A94B00E00A70 /* SignUpViewController.swift in Sources */,
+				3E7CF4041CF6450D00F486B2 /* ListingObject.swift in Sources */,
+				3E6CC3571CF2A94B00E00A70 /* AppDelegate.swift in Sources */,
+				3EC3251E1CF734C100626C48 /* NetworksTableViewController.swift in Sources */,
+				3EC325201CF7C3AB00626C48 /* NetworkTableViewCell.swift in Sources */,
+				3EC325261CF7E90000626C48 /* FacebookGraphAPIManager.swift in Sources */,
+				3E7CF3FC1CF5FE9400F486B2 /* RecoverPasswordViewController.swift in Sources */,
+				3EC325111CF703A600626C48 /* ItemCell.swift in Sources */,
+				3EC325231CF7DA5500626C48 /* HomeViewController.swift in Sources */,
+				3EC3252D1CF894C400626C48 /* ItemImagePickerViewController.swift in Sources */,
+				3E7CF4011CF6366300F486B2 /* EtsyRESTAPIManager.swift in Sources */,
+				3EC325151CF7104300626C48 /* ItemTableViewController.swift in Sources */,
+				3E6CC3591CF2A94B00E00A70 /* SignInViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E6CC3651CF2A94B00E00A70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E6CC36E1CF2A94B00E00A70 /* VendooTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E6CC3701CF2A94B00E00A70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E6CC3791CF2A94B00E00A70 /* VendooUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E6CC36B1CF2A94B00E00A70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E6CC3521CF2A94B00E00A70 /* Vendoo */;
+			targetProxy = 3E6CC36A1CF2A94B00E00A70 /* PBXContainerItemProxy */;
+		};
+		3E6CC3761CF2A94B00E00A70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E6CC3521CF2A94B00E00A70 /* Vendoo */;
+			targetProxy = 3E6CC3751CF2A94B00E00A70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3E6CC35C1CF2A94B00E00A70 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E6CC35D1CF2A94B00E00A70 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3E6CC3611CF2A94B00E00A70 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E6CC3621CF2A94B00E00A70 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E6CC37B1CF2A94B00E00A70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E6CC37C1CF2A94B00E00A70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E6CC37E1CF2A94B00E00A70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9F6F7897E53ED9583C965E3 /* Pods-Vendoo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Vendoo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kroleo.Vendoo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3E6CC37F1CF2A94B00E00A70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6979B7B8AF7AC049C2F23196 /* Pods-Vendoo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Vendoo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kroleo.Vendoo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3E6CC3811CF2A94B00E00A70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06804DD03B93C7E2714D5566 /* Pods-VendooTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VendooTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kroleo.VendooTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vendoo.app/Vendoo";
+			};
+			name = Debug;
+		};
+		3E6CC3821CF2A94B00E00A70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B0AD5D22E5B4D8197481769 /* Pods-VendooTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VendooTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kroleo.VendooTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vendoo.app/Vendoo";
+			};
+			name = Release;
+		};
+		3E6CC3841CF2A94B00E00A70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F04540FDEF587384AABE5D4B /* Pods-VendooUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = VendooUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kroleo.VendooUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Vendoo;
+			};
+			name = Debug;
+		};
+		3E6CC3851CF2A94B00E00A70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 368DE81C9F5991477528A929 /* Pods-VendooUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = VendooUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kroleo.VendooUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Vendoo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E6CC34E1CF2A94B00E00A70 /* Build configuration list for PBXProject "Vendoo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E6CC37B1CF2A94B00E00A70 /* Debug */,
+				3E6CC37C1CF2A94B00E00A70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E6CC37D1CF2A94B00E00A70 /* Build configuration list for PBXNativeTarget "Vendoo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E6CC37E1CF2A94B00E00A70 /* Debug */,
+				3E6CC37F1CF2A94B00E00A70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E6CC3801CF2A94B00E00A70 /* Build configuration list for PBXNativeTarget "VendooTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E6CC3811CF2A94B00E00A70 /* Debug */,
+				3E6CC3821CF2A94B00E00A70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E6CC3831CF2A94B00E00A70 /* Build configuration list for PBXNativeTarget "VendooUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E6CC3841CF2A94B00E00A70 /* Debug */,
+				3E6CC3851CF2A94B00E00A70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E6CC34B1CF2A94B00E00A70 /* Project object */;
+}

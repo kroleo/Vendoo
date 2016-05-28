@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Etsy</key>
+	<dict>
+		<key>consumerKey</key>
+		<string>snbs78qkfy3yqq6yhe6yv49b</string>
+		<key>consumerSecret</key>
+		<string>4sbva4oqb6</string>
+	</dict>
+	<key>Facebook</key>
+	<dict>
+		<key>consumerKey</key>
+		<string>504150909777657</string>
+		<key>consumerSecret</key>
+		<string>05eb827fa44b544a9135cb3d3f3c6a36</string>
+	</dict>
+</dict>
+</plist>

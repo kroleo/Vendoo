@@ -1,0 +1,6 @@
+framework module Pods_VendooUITests {
+  umbrella header "Pods-VendooUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
