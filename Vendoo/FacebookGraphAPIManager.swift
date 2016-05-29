@@ -21,6 +21,7 @@ class FacebookGraphAPIManager: NSObject {
     
     private var apiKey: String!
     private var apiSecret: String!
+    var isAuthorized: Bool = NSUserDefaults.standardUserDefaults().boolForKey("fbAuthorized")
     //---------------------------------------------//
     
     override init(){
@@ -54,6 +55,12 @@ extension FacebookGraphAPIManager {
             }, failure: { error in
                 print(error.localizedDescription, terminator: "")
         })
+        
+        //once everything is authorized save true value to the authorization boolean
+        /*
+         NSUserDefaults.standardUserDefaults().setBool(true, forKey: "etsyAuthorized")
+         self.isAuthorized = NSUserDefaults.standardUserDefaults().boolForKey("fbAuthorized")
+         */
     }
 
 }

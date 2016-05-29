@@ -24,6 +24,7 @@ class EtsyRESTAPIManager: NSObject {
 
     private var apiKey: String!
     private var apiSecret: String!
+    var isAuthorized: Bool = NSUserDefaults.standardUserDefaults().boolForKey("etsyAuthorized")
     //---------------------------------------------//
     
     //User specific class variables
@@ -37,6 +38,8 @@ class EtsyRESTAPIManager: NSObject {
             self.apiKey = ((dict["Etsy"] as! Dictionary<String, AnyObject>)["consumerKey"] as! String)
             self.apiSecret = ((dict["Etsy"] as! Dictionary<String, AnyObject>)["consumerSecret"] as! String)
         }
+        
+        
     }
     
     
@@ -83,6 +86,12 @@ extension EtsyRESTAPIManager {
         })
  
  */
+        
+        //once everything is authorized save true value to the authorization boolean
+        /*
+        NSUserDefaults.standardUserDefaults().setBool(true, forKey: "etsyAuthorized")
+        self.isAuthorized = NSUserDefaults.standardUserDefaults().boolForKey("etsyAuthorized")
+         */
     }
     
     

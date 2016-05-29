@@ -12,8 +12,7 @@
  //Make it so u are accessing REST api service managers from TabController
  //to promote more centralized code.
  
- //For now putting rest service managers in this controller file to test OAuth: EtsyRESTServiceManager,
- //FacebookGraphAPIServiceManager, EbayServiceManager, and AmazonServiceManager.
+ //need to make the class control the navigation bar by changing the buttons on it to show a back button in the case where class is controlling network selection, and hide back button for the case where class is controlling network authorization
  */
 
 import UIKit
@@ -26,11 +25,8 @@ class NetworksTableViewController: UIViewController {
     //class variables
     private var networkToggleOrSelect: Bool = false
     private var networksDictionary: Dictionary<String, Bool> = ["ebay":false, "amazon":false,"etsy":false,"facebook":false]
-    
-    
-    //temporary class variables /*TESTING*/
-    let etsyManager = EtsyRESTAPIManager()
-    let fbGraphManager = FacebookGraphAPIManager()
+    private var itemListingDictionary: Dictionary<String, AnyObject>! = Dictionary<String, AnyObject>()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +54,17 @@ class NetworksTableViewController: UIViewController {
     
 }
 
+//MARK: - class methods Network Selection when creating a new listing
+extension NetworksTableViewController {
+
+    func setListingDictionary(listingDictionary: Dictionary<String, AnyObject>){
+    
+        self.itemListingDictionary = listingDictionary
+        
+    }
+    
+}
+
 
 // MARK: - Navigation
 extension NetworksTableViewController {
@@ -66,6 +73,12 @@ extension NetworksTableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if(segue.identifier == "ItemPreviewSegue"){
+            (segue.destinationViewController as! ListingPreviewViewController).setListing(self.itemListingDictionary["picture"] as! UIImage, title: self.itemListingDictionary["title"] as! String, description: self.itemListingDictionary["description"] as! String, price: self.itemListingDictionary["price"] as! String, category: self.itemListingDictionary["category"] as! String)
+            
+            (segue.destinationViewController as! ListingPreviewViewController).setDictionary(self.networksDictionary)
+        }
     }
 }
 
@@ -93,6 +106,7 @@ extension NetworksTableViewController: UITableViewDataSource {
             switch (indexPath.row){
                 
             case 0:
+                
                 //loads network cell for ebay
                 cell = (self.tableView.dequeueReusableCellWithIdentifier("ebay", forIndexPath: indexPath) as! EbayTableViewCell)
                 break
@@ -145,6 +159,15 @@ extension NetworksTableViewController: UITableViewDataSource {
 }
 
 
+//MARK: - IBActions
+extension NetworksTableViewController {
+
+    @IBAction func showListingPreview(sender: AnyObject) {
+        
+        self.performSegueWithIdentifier("ItemPreviewSegue", sender: self)
+    }
+    
+}
 
 //SET UP TO ADD EACH INTEGRATION AS DEVELOPMENT GETS TO IT
 
@@ -173,6 +196,7 @@ extension NetworksTableViewController: UITableViewDelegate {
                     
                     //code to deselect network
                     self.networksDictionary["ebay"] = false
+                    
 
                 }
                 else{
@@ -374,12 +398,12 @@ extension NetworksTableViewController: UITableViewDelegate {
                     
                     
                     //this is the type of code desired to access the rest management classes
-                    /*
+                    
                      let tabBar = self.tabBarController
                      (tabBar as? HomeViewController)?.etsyManager.authorizeApp(self)
-                     */
                     
-                    self.etsyManager.authorizeApp(self)
+                    
+                    //self.etsyManager.authorizeApp(self)
                 }
                 
                 break
@@ -409,12 +433,12 @@ extension NetworksTableViewController: UITableViewDelegate {
                     //code to authorize network
                     
                     //this is the type of code desired to access the rest management classes
-                    /*
+                    
                      let tabBar = self.tabBarController
                      (tabBar as? HomeViewController)?.fbGraphManager.authorizeApp(self)
-                     */
                     
-                    self.fbGraphManager.authorizeApp(self)
+                    
+                    //self.fbGraphManager.authorizeApp(self)
                 }
                 
                 
@@ -426,6 +450,7 @@ extension NetworksTableViewController: UITableViewDelegate {
         
         
     }
+    
     
     
     /*
