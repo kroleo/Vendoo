@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AeroGearHttp.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>AeroGearOAuth2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Alamofire-SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -137,12 +147,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>8E87CBA9EBF6671AAFD3A8CCD2C3875B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>92943306EC8070DF9CD02ECD505D2CD5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A9D1431CC26974F3974E211FB2B489BB</key>
+		<key>B6184234CE5B97D6DADDB68315E67B58</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -153,6 +168,11 @@
 			<true/>
 		</dict>
 		<key>C54A0D22A460C6E11B151CCF892D6432</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E4EEF93D5D2D1222C39B213D582C76D7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

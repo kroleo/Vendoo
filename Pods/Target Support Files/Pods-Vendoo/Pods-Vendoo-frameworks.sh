@@ -85,6 +85,8 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AeroGearHttp/AeroGearHttp.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AeroGearOAuth2/AeroGearOAuth2.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire-SwiftyJSON/Alamofire_SwiftyJSON.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Bolts/Bolts.framework"
@@ -99,6 +101,8 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AeroGearHttp/AeroGearHttp.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AeroGearOAuth2/AeroGearOAuth2.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire-SwiftyJSON/Alamofire_SwiftyJSON.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Bolts/Bolts.framework"

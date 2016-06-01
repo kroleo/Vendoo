@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1BD4D4EBDE19E2FBA2CCB40C /* Pods_VendooUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FACABBA7656B6698731A6B0 /* Pods_VendooUITests.framework */; };
+		3E4897CD1CFEE3370069F742 /* ListingPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4897CC1CFEE3370069F742 /* ListingPreviewViewController.swift */; };
 		3E6CC3571CF2A94B00E00A70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6CC3561CF2A94B00E00A70 /* AppDelegate.swift */; };
 		3E6CC3591CF2A94B00E00A70 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6CC3581CF2A94B00E00A70 /* SignInViewController.swift */; };
 		3E6CC35B1CF2A94B00E00A70 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6CC35A1CF2A94B00E00A70 /* SignUpViewController.swift */; };
@@ -55,6 +56,7 @@
 		06804DD03B93C7E2714D5566 /* Pods-VendooTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VendooTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VendooTests/Pods-VendooTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1B0AD5D22E5B4D8197481769 /* Pods-VendooTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VendooTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VendooTests/Pods-VendooTests.release.xcconfig"; sourceTree = "<group>"; };
 		368DE81C9F5991477528A929 /* Pods-VendooUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VendooUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VendooUITests/Pods-VendooUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3E4897CC1CFEE3370069F742 /* ListingPreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingPreviewViewController.swift; sourceTree = "<group>"; };
 		3E6CC3531CF2A94B00E00A70 /* Vendoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vendoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E6CC3561CF2A94B00E00A70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E6CC3581CF2A94B00E00A70 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 		3EC3252B1CF8944800626C48 /* NewItemPostingSession */ = {
 			isa = PBXGroup;
 			children = (
+				3E4897CC1CFEE3370069F742 /* ListingPreviewViewController.swift */,
 				3EC3252C1CF894C400626C48 /* ItemImagePickerViewController.swift */,
 			);
 			name = NewItemPostingSession;
@@ -548,6 +551,7 @@
 				3EC325261CF7E90000626C48 /* FacebookGraphAPIManager.swift in Sources */,
 				3E7CF3FC1CF5FE9400F486B2 /* RecoverPasswordViewController.swift in Sources */,
 				3EC325111CF703A600626C48 /* ItemCell.swift in Sources */,
+				3E4897CD1CFEE3370069F742 /* ListingPreviewViewController.swift in Sources */,
 				3EC325231CF7DA5500626C48 /* HomeViewController.swift in Sources */,
 				3EC3252D1CF894C400626C48 /* ItemImagePickerViewController.swift in Sources */,
 				3E7CF4011CF6366300F486B2 /* EtsyRESTAPIManager.swift in Sources */,

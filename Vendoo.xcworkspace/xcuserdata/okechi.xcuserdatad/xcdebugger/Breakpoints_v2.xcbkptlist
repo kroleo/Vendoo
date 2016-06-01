@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Vendoo/EtsyRESTAPIManager.swift"
-            timestampString = "486046132.350173"
+            filePath = "Vendoo/FacebookGraphAPIManager.swift"
+            timestampString = "486462859.733613"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "authorizeApp(_:)"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
+            landmarkName = "makePOSTResquest(_:params:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Vendoo/NetworksTableViewController.swift"
-            timestampString = "486046132.350173"
+            filePath = "Vendoo/ListingPreviewViewController.swift"
+            timestampString = "486462867.093209"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "204"
-            endingLineNumber = "204"
-            landmarkName = "tableView(_:didSelectRowAtIndexPath:)"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "publishItem(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Vendoo/EtsyRESTAPIManager.swift"
-            timestampString = "486046132.350173"
+            filePath = "Vendoo/ListingPreviewViewController.swift"
+            timestampString = "486462875.331208"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "authorizeApp(_:)"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "setListing()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -58,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Vendoo/FacebookGraphAPIManager.swift"
-            timestampString = "486046120.823696"
+            timestampString = "486465261.252783"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "authorizeApp(_:)"
+            startingLineNumber = "163"
+            endingLineNumber = "163"
+            landmarkName = "makePOSTResquest(_:params:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

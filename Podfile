@@ -13,6 +13,7 @@ target 'Vendoo' do
   # pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
   pod 'Alamofire-SwiftyJSON'
   pod 'OAuthSwift', '~> 0.5.0'
+  pod 'AeroGearOAuth2'
   pod 'FBSDKCoreKit'
   pod 'FBSDKLoginKit'
   pod 'FBSDKShareKit'

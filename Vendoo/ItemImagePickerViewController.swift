@@ -59,13 +59,15 @@ class ItemImagePickerViewController: UIViewController {
         if(segue.identifier == "SelectNetworkSegue"){
             print(self.itemName.text!)
             print(self.itemDescription.text!)
-            //print(self.possibleItemImage.image!)
+            print(self.possibleItemImage.image)
             print(self.itemPrice.text!)
             
-            let dict: Dictionary<String, AnyObject> = ["title":self.itemName.text!, "description":self.itemDescription.text!, "picture": UIImage() /*"picture":self.possibleItemImage.image!*/ , "price":self.itemPrice.text!, "category":self.pickerData[self.categoryPicker.selectedRowInComponent(0)]]
-            
+            var dict: Dictionary<String, AnyObject!> = ["title":self.itemName.text!, "description":self.itemDescription.text!, "price":self.itemPrice.text!, "category":self.pickerData[self.categoryPicker.selectedRowInComponent(0)]]
+            dict["picture"] = self.possibleItemImage
             (segue.destinationViewController as! NetworksTableViewController).setListingDictionary(dict)
+            (segue.destinationViewController as! NetworksTableViewController).setFBManager(((self.tabBarController as? HomeViewController)?.fbGraphManager)!)
             
+            (segue.destinationViewController as! NetworksTableViewController).setNetworkSelectFunctionality(true)
             print(self.categoryPicker.selectedRowInComponent(0))
         }
      

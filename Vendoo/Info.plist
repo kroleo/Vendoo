@@ -24,10 +24,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string></string>
+			<string>com.Kroleo.Vendoo</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>vendoo</string>
+				<string>fb504150909777657</string>
 			</array>
 		</dict>
 	</array>
@@ -39,8 +39,9 @@
 	<string>Vendoo</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
-		<string>fbapi</string>
 		<string>fbauth2</string>
+		<string>fbapi</string>
+		<string>fb-messenger-api</string>
 		<string>fbshareextension</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>

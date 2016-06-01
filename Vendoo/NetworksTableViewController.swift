@@ -26,6 +26,8 @@ class NetworksTableViewController: UIViewController {
     private var networkToggleOrSelect: Bool = false
     private var networksDictionary: Dictionary<String, Bool> = ["ebay":false, "amazon":false,"etsy":false,"facebook":false]
     private var itemListingDictionary: Dictionary<String, AnyObject>! = Dictionary<String, AnyObject>()
+    private var graphManager: FacebookGraphAPIManager! = nil
+
 
     
     override func viewDidLoad() {
@@ -63,6 +65,10 @@ extension NetworksTableViewController {
         
     }
     
+    func setFBManager(fbManager: FacebookGraphAPIManager){
+        self.graphManager = fbManager
+    }
+    
 }
 
 
@@ -75,9 +81,10 @@ extension NetworksTableViewController {
         // Pass the selected object to the new view controller.
         
         if(segue.identifier == "ItemPreviewSegue"){
-            (segue.destinationViewController as! ListingPreviewViewController).setListing(self.itemListingDictionary["picture"] as! UIImage, title: self.itemListingDictionary["title"] as! String, description: self.itemListingDictionary["description"] as! String, price: self.itemListingDictionary["price"] as! String, category: self.itemListingDictionary["category"] as! String)
             
-            (segue.destinationViewController as! ListingPreviewViewController).setDictionary(self.networksDictionary)
+            (segue.destinationViewController as! ListingPreviewViewController).setDictionary(self.networksDictionary, itemdictionary: self.itemListingDictionary)
+            (segue.destinationViewController as! ListingPreviewViewController).setFBManager(self.graphManager)
+            
         }
     }
 }
@@ -121,6 +128,7 @@ extension NetworksTableViewController: UITableViewDataSource {
             default:
                 //loads network cell for ebay
                 cell = (self.tableView.dequeueReusableCellWithIdentifier("facebook", forIndexPath: indexPath) as! FBTableViewCell)
+                
                 break
             }
         
@@ -143,8 +151,15 @@ extension NetworksTableViewController: UITableViewDataSource {
                 cell = (self.tableView.dequeueReusableCellWithIdentifier("etsy", forIndexPath: indexPath) as! EtsyTableViewCell)
                 break
             default:
-                //loads network cell for ebay
+                //loads network cell for facebook
                 cell = (self.tableView.dequeueReusableCellWithIdentifier("facebook", forIndexPath: indexPath) as! FBTableViewCell)
+                
+                let tabBar = self.tabBarController
+                if((tabBar as? HomeViewController)?.fbGraphManager.isAuthorized == true){
+                    
+                    (cell as! FBTableViewCell).networkToggle.setOn(true, animated: false)
+                }
+                
                 break
             }
         }
@@ -415,15 +430,17 @@ extension NetworksTableViewController: UITableViewDelegate {
                 cell = (self.tableView.dequeueReusableCellWithIdentifier("facebook", forIndexPath: indexPath) as! FBTableViewCell)
                 cell.setSelected(false, animated: false)
                 
-                
                 //OAuthorization code for facebook
-                if(cell.networkToggle.on == true){
+                if((self.tabBarController as? HomeViewController)?.fbGraphManager.isAuthorized)!{
                     
                     dispatch_async(dispatch_get_main_queue(), { () -> Void in
                         cell.networkToggle.setOn(false, animated: true)
                     })
                     
                     //code to deauthorize network
+                    let tabBar = self.tabBarController
+                    let didSucceed:Bool = ((tabBar as? HomeViewController)?.fbGraphManager.deAuthorizeApp(self))!
+                    cell.networkToggle.on = !didSucceed
                 }
                 else{
                     
@@ -434,11 +451,12 @@ extension NetworksTableViewController: UITableViewDelegate {
                     
                     //this is the type of code desired to access the rest management classes
                     
-                     let tabBar = self.tabBarController
-                     (tabBar as? HomeViewController)?.fbGraphManager.authorizeApp(self)
+                    let tabBar = self.tabBarController
+                    let didSucceed: Bool = ((tabBar as? HomeViewController)?.fbGraphManager.authorizeApp(self))!
+                    
+                    cell.networkToggle.on = didSucceed
                     
                     
-                    //self.fbGraphManager.authorizeApp(self)
                 }
                 
                 
